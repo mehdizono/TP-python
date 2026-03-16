@@ -1,0 +1,7 @@
+<h1>Compteur de mots</h1>
+<form action="counter" method="POST">
+    {% csrf_token %}
+    <textarea name="texte_utilisateur" rows="5" cols="40" placeholder="Tapez votre texte ici..."></textarea>
+    <br>
+    <button type="submit">Compter les mots</button>
+</form>
